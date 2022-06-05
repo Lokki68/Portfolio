@@ -1,7 +1,13 @@
 import React from "react";
+import { Container } from "./LayoutStyles";
 
-function Layout({ children }) {
-  return <div>{children}</div>;
-}
+import Header from "../components/Header/Header";
 
-export default Layout;
+export const Layout = ({ children }) => {
+  return (
+    <Container>
+      <Header />
+      <main>{children}</main>
+    </Container>
+  );
+};
