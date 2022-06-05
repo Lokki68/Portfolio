@@ -21,20 +21,20 @@ export const LogoContainer = styled.div`
   flex-direction: row;
   align-content: center;
 
-  .logocontainer-link {
-    display: flex;
-    align-items: center;
-    color: white;
-    margin-bottom: 20px;
-
-    span {
-      font-size: 2rem;
-      margin-left: 1rem;
-    }
-  }
-
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 1 / 1 / 2 / 4;
+  }
+`;
+
+export const LogoLink = styled.a`
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-bottom: 20px;
+
+  span {
+    font-size: 2rem;
+    margin-left: 1rem;
   }
 `;
 
@@ -52,7 +52,7 @@ export const NavContainer = styled.nav`
 export const NavLink = styled.a`
   font-size: 1.5rem;
   line-height: 32px;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.5);
   cursor: pointer;
   transition: 0.4s ease;
 
@@ -72,8 +72,26 @@ export const SocialSection = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 8px;
 
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 1 / 4 / 2 / 6;
+  }
+`;
+
+export const SocialIcons = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  transition: 0.4s ease;
+  color: rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #212d45;
+    color: #f1f1f1;
+    transform: scale(1);
   }
 `;
