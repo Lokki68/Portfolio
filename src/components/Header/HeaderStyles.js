@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { BreakPoints } from "../../themes/BreakPoint";
+
 export const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -7,7 +9,7 @@ export const Container = styled.div`
   grid-column-gap: 2rem;
   padding: 2rem 1rem 0;
 
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media screen and (max-width: ${BreakPoints.sm}) {
     grid-template-rows: repeat(2, 60px);
     grid-column-gap: 0.5rem;
     grid-row-gap: 0.5rem;
@@ -21,7 +23,7 @@ export const LogoContainer = styled.div`
   flex-direction: row;
   align-content: center;
 
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media screen and (max-width: ${BreakPoints.sm}) {
     grid-area: 1 / 1 / 2 / 4;
   }
 `;
@@ -44,7 +46,7 @@ export const NavContainer = styled.nav`
   display: flex;
   justify-content: space-around;
 
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media screen and (max-width: ${BreakPoints.sm}) {
     grid-area: 2 / 1 / 3 / -1;
   }
 `;
@@ -61,7 +63,7 @@ export const NavLink = styled.a`
     opacity: 1;
   }
 
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media screen and (max-width: ${BreakPoints.sm}) {
     padding: 0.5rem;
   }
 `;
@@ -74,7 +76,7 @@ export const SocialSection = styled.div`
   align-items: center;
   margin-bottom: 8px;
 
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media screen and (max-width: ${BreakPoints.sm}) {
     grid-area: 1 / 4 / 2 / 6;
   }
 `;

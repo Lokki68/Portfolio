@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { BreakPoints } from "../../themes/BreakPoint";
 
 export const FooterContainer = styled.footer`
   //background-color: green;
@@ -8,7 +9,7 @@ export const FooterContainer = styled.footer`
   margin: 1rem auto;
   box-sizing: content-box;
 
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media screen and (max-width: ${BreakPoints.sm}) {
     padding: 0 16px 48px;
     width: calc(100vw - 32px);
   }
@@ -20,16 +21,16 @@ export const LinkList = styled.ul`
   grid-template-columns: repeat(3, minmax(85px, 220px));
   gap: 40px;
 
-  @media ${(props) => props.theme.breakpoints.lg} {
+  @media screen and (max-width: ${BreakPoints.lg}) {
     padding: 32px 0 16px;
   }
 
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media screen and (max-width: ${BreakPoints.md}) {
     width: 100%;
     gap: 16px;
   }
 
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media screen and (max-width: ${BreakPoints.sm}) {
     padding: 32px 4px 16px;
     gap: 5px;
   }
@@ -51,7 +52,7 @@ export const LinkTitle = styled.h4`
   color: rgba(255, 255, 255, 0.4);
   margin-bottom: 16px;
 
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media screen and (max-width: ${BreakPoints.md}) {
     font-size: 10px;
     line-height: 12px;
     margin-bottom: 8px;
@@ -67,13 +68,13 @@ export const LinkItem = styled.a`
   position: relative;
   left: 0;
 
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media screen and (max-width: ${BreakPoints.md}) {
     display: flex;
     font-size: 16px;
     line-height: 28px;
   }
 
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media screen and (max-width: ${BreakPoints.md}) {
     display: flex;
     align-items: center;
     font-size: 8px;
@@ -86,7 +87,7 @@ export const SocialContainer = styled.div`
   display: flex;
   align-items: center;
 
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media screen and (max-width: ${BreakPoints.md}) {
     justify-content: center;
     padding-right: 16px;
     flex-wrap: wrap;
@@ -99,11 +100,11 @@ export const CompagnyContainer = styled.div`
   flex-wrap: wrap;
   margin-right: auto;
 
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media screen and (max-width: ${BreakPoints.md}) {
     flex-direction: column;
   }
 
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media screen and (max-width: ${BreakPoints.sm}) {
     margin: 0 0 32px;
     align-items: center;
   }
@@ -117,12 +118,12 @@ export const Slogan = styled.div`
   line-height: 30px;
   padding: 1rem;
 
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media screen and (max-width: ${BreakPoints.md}) {
     font-size: 16px;
     line-height: 28px;
   }
 
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media screen and (max-width: ${BreakPoints.sm}) {
     font-size: 14px;
     line-height: 22px;
     width: 100px;
@@ -134,7 +135,7 @@ export const SocialIconsContainer = styled.div`
   display: flex;
   justify-content: space-between;
 
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media screen and (max-width: ${BreakPoints.sm}) {
     width: 100%;
     justify-content: flex-end;
   }
