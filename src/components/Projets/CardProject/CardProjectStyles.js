@@ -29,8 +29,12 @@ export const CardTitle = styled.div`
   bottom: 0;
   left: 0;
   right: 0;
-  background: #f1f1f1;
-  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2c304dff;
+  height: 30px;
+  color: #fff;
   border-radius: 0 0 10px 10px;
 `;
 
