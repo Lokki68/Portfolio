@@ -1,6 +1,17 @@
 import React, { useState } from "react";
 import ReactCardFlip from "react-card-flip";
-import { BlogCard, CardTitle, Img } from "./CardProjectStyles";
+import {
+  BlogCard,
+  CardInfo,
+  CardTitle,
+  ExternalLink,
+  Img,
+  Tag,
+  TagList,
+  TitleContent,
+  UtilityList,
+} from "./CardProjectStyles";
+import { SectionDivider } from "../../../styles/GlobalComponents";
 
 function CardProject({ project }) {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -19,7 +30,19 @@ function CardProject({ project }) {
         <CardTitle>{title}</CardTitle>
       </BlogCard>
       <BlogCard onClick={handleClick}>
-        {/*<Title>{description}</Title>*/}
+        <CardInfo>{description}</CardInfo>
+        <div>
+          <TitleContent>Stack</TitleContent>
+          <TagList>
+            {tags.map((tag, i) => (
+              <Tag key={i}>{tag}</Tag>
+            ))}
+          </TagList>
+        </div>
+        <UtilityList>
+          <ExternalLink href={visit}>Page</ExternalLink>
+          <ExternalLink href={source}>Code</ExternalLink>
+        </UtilityList>
       </BlogCard>
     </ReactCardFlip>
   );

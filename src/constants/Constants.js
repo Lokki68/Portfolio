@@ -63,7 +63,7 @@ export const projects = [
     title: "StackOverFlou",
     description: "Project perso guidé, réalisé avec le groupe Modulo-Tech",
     image: "/images/StackOverFlou.png",
-    tags: ["ReactJs"],
+    tags: ["ReactJs", "NodeJs", "MongoDb"],
     source: "https://github.com/Lokki68/StackverFlou-Modulo",
     visit: "",
     id: 6,
