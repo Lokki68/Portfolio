@@ -12,6 +12,7 @@ import {
   UtilityList,
 } from "./CardProjectStyles";
 import { SectionDivider } from "../../../styles/GlobalComponents";
+import { MdOutlineLoop } from "react-icons/md";
 
 function CardProject({ project }) {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -29,7 +30,7 @@ function CardProject({ project }) {
         <Img src={image} alt={title} />
         <CardTitle>{title}</CardTitle>
       </BlogCard>
-      <BlogCard onClick={handleClick}>
+      <BlogCard>
         <CardInfo>{description}</CardInfo>
         <div>
           <TitleContent>Stack</TitleContent>
@@ -40,8 +41,15 @@ function CardProject({ project }) {
           </TagList>
         </div>
         <UtilityList>
-          <ExternalLink href={visit}>Page</ExternalLink>
-          <ExternalLink href={source}>Code</ExternalLink>
+          <ExternalLink href={visit} disabled={visit === "" ? "disabled" : ""}>
+            Page
+          </ExternalLink>
+          <button onClick={handleClick}>
+            <MdOutlineLoop />
+          </button>
+          <ExternalLink href={source} target="_blank">
+            Code
+          </ExternalLink>
         </UtilityList>
       </BlogCard>
     </ReactCardFlip>

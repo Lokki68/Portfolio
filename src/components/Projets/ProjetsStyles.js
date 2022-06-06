@@ -7,4 +7,9 @@ export const GridContainer = styled.section`
   column-gap: 5px;
   row-gap: 60px;
   margin-bottom: 30px;
+
+  @media screen and (max-width: 640px) {
+    grid-template-columns: 300px;
+    margin: 0 auto;
+  }
 `;
