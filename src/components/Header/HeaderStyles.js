@@ -9,7 +9,7 @@ export const Container = styled.div`
   grid-column-gap: 2rem;
   padding: 2rem 1rem 0;
 
-  @media screen and (max-width: ${BreakPoints.sm}) {
+  @media screen and (max-width: 640px) {
     grid-template-rows: repeat(2, 60px);
     grid-column-gap: 0.5rem;
     grid-row-gap: 0.5rem;
@@ -23,7 +23,7 @@ export const LogoContainer = styled.div`
   flex-direction: row;
   align-content: center;
 
-  @media screen and (max-width: ${BreakPoints.sm}) {
+  @media screen and (max-width: 640px) {
     grid-area: 1 / 1 / 2 / 4;
   }
 `;
@@ -46,7 +46,7 @@ export const NavContainer = styled.nav`
   display: flex;
   justify-content: space-around;
 
-  @media screen and (max-width: ${BreakPoints.sm}) {
+  @media screen and (max-width: 640px) {
     grid-area: 2 / 1 / 3 / -1;
   }
 `;
@@ -63,7 +63,7 @@ export const NavLink = styled.a`
     opacity: 1;
   }
 
-  @media screen and (max-width: ${BreakPoints.sm}) {
+  @media screen and (max-width: 640px) {
     padding: 0.5rem;
   }
 `;
@@ -76,7 +76,7 @@ export const SocialSection = styled.div`
   align-items: center;
   margin-bottom: 8px;
 
-  @media screen and (max-width: ${BreakPoints.sm}) {
+  @media screen and (max-width: 640px) {
     grid-area: 1 / 4 / 2 / 6;
   }
 `;

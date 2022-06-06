@@ -8,15 +8,15 @@ export const List = styled.ul`
   gap: 40px;
   margin: 3rem 0;
 
-  @media screen and (max-width: ${BreakPoints.lg}) {
+  @media screen and (max-width: 1024px) {
     margin: 64px 0;
   }
 
-  @media screen and (max-width: ${BreakPoints.md}) {
+  @media screen and (max-width: 768px) {
     gap: 24px;
   }
 
-  @media screen and (max-width: ${BreakPoints.sm}) {
+  @media screen and (max-width: 640px) {
     display: flex;
     flex-direction: column;
     margin: 32px 0;
@@ -36,7 +36,7 @@ export const ListContainer = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media screen and (max-width: ${BreakPoints.sm}) {
+  @media screen and (max-width: 640px) {
     margin-left: 18px;
   }
 `;
@@ -49,12 +49,12 @@ export const ListTitle = styled.h4`
   color: #fff;
   margin-bottom: 8px;
 
-  @media screen and (max-width: ${BreakPoints.md}) {
+  @media screen and (max-width: 768px) {
     font-size: 24px;
     line-height: 28px;
   }
 
-  @media screen and (max-width: ${BreakPoints.sm}) {
+  @media screen and (max-width: 640px) {
     font-size: 20px;
     line-height: 28px;
     margin-bottom: 4px;
@@ -78,12 +78,12 @@ export const ListParagraph = styled.p`
   line-height: 30px;
   color: rgba(255, 255, 255, 0.75);
 
-  @media screen and (max-width: ${BreakPoints.md}) {
+  @media screen and (max-width: 768px) {
     font-size: 16px;
     line-height: 28px;
   }
 
-  @media screen and (max-width: ${BreakPoints.sm}) {
+  @media screen and (max-width: 640px) {
     font-size: 14px;
     line-height: 22px;
   }

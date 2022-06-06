@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { BreakPoints } from "../../../themes/BreakPoint";
 
 export const BlogCard = styled.div`
   position: relative;
@@ -11,7 +10,7 @@ export const BlogCard = styled.div`
   aspect-ratio: 4/3;
   cursor: pointer;
 
-  @media screen and (max-width: ${BreakPoints.sm}) {
+  @media screen and (max-width: 640px) {
     width: 100%;
   }
 `;
@@ -47,7 +46,7 @@ export const CardInfo = styled.div`
   line-height: 24px;
   text-align: justify;
 
-  @media screen and (max-width: ${BreakPoints.sm}) {
+  @media screen and (max-width: 640px) {
     padding: 0.3rem;
   }
 `;
