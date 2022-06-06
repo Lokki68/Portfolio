@@ -36,9 +36,9 @@ function Technologies(props) {
       <SectionDivider />
       <SectionTitle main>Technologies</SectionTitle>
       <SectionText>
-        Voici les technologies que j'utilise le plus souvent pour réaliser mes
-        projets. Et surtout les technologies qui me tienne à cœur, et que je
-        continue d'apprendre, jour après jour.
+        {/*Voici les technologies que j'utilise le plus souvent pour réaliser mes*/}
+        {/*projets. Et surtout les technologies qui me tienne à cœur, et que je*/}
+        {/*continue d'apprendre, jour après jour.*/}
       </SectionText>
       <List>
         {/*Front*/}
