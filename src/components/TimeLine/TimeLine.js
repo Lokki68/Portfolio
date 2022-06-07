@@ -19,6 +19,11 @@ import {
 } from "./TimeLineStyles";
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
+const textAPropos = `41 ans, marié et père de trois enfants. Rigoureux, organisé et
+        dynamique, je suis doté d'un bon esprit d'initiative et d'une grande
+        facultée d'adaptation. J'aime travailler en équipe et relever de
+        nouveaux challenges. J'ai souhaité me reconvertir professionnellement,
+        afin d'allier ma passion à mon futur métier.`;
 
 function TimeLine(props) {
   const [activeItem, setActiveItem] = useState(0);
@@ -63,17 +68,7 @@ function TimeLine(props) {
   return (
     <Section id="propos">
       <SectionTitle>A Propos</SectionTitle>
-      <SectionText>
-        41 ans, marié et père de trois enfants. Rigoureux, organisé et
-        {/* eslint-disable-next-line react/no-unescaped-entities */}
-        dynamique, je suis doté d'un bon esprit d'initiative et d'une grande
-        {/* eslint-disable-next-line react/no-unescaped-entities */}
-        facultée d'adaptation. J'aime travailler en équipe et relever de
-        {/* eslint-disable-next-line react/no-unescaped-entities */}
-        nouveaux challenges. J'ai souhaité me reconvertir professionnellement,
-        {/* eslint-disable-next-line react/no-unescaped-entities */}
-        afin d'allier ma passion à mon futur métier.
-      </SectionText>
+      <SectionText>{textAPropos}</SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
           {TimeLineData.map((item, index) => (
