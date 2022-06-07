@@ -30,18 +30,16 @@ import {
   DiPhp,
 } from "react-icons/di";
 
+const techPresesntation = `Voici les technologies que j'utilise le plus souvent pour réaliser mes
+        projets. Et surtout les technologies qui me tienne à cœur, et que je
+        continue d'apprendre, jour après jour.`;
+
 function Technologies(props) {
   return (
     <Section id="technologies">
       <SectionDivider />
       <SectionTitle main>Technologies</SectionTitle>
-      <SectionText>
-        {/* eslint-disable-next-line react/no-unescaped-entities */}
-        Voici les technologies que j'utilise le plus souvent pour réaliser mes
-        projets. Et surtout les technologies qui me tienne à cœur, et que je
-        {/* eslint-disable-next-line react/no-unescaped-entities */}
-        continue d'apprendre, jour après jour.
-      </SectionText>
+      <SectionText>{techPresentation}</SectionText>
       <List>
         {/*Front*/}
         <ListItem>
