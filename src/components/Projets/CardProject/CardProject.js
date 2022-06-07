@@ -41,7 +41,11 @@ function CardProject({ project }) {
           </TagList>
         </div>
         <UtilityList>
-          <ExternalLink href={visit} disabled={visit === "" ? "disabled" : ""}>
+          <ExternalLink
+            href={visit}
+            disabled={visit === "" ? "disabled" : ""}
+            target="_blank"
+          >
             Page
           </ExternalLink>
           <button onClick={handleClick}>

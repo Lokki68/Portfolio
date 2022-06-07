@@ -100,7 +100,7 @@ export const UtilityList = styled.ul`
 `;
 
 export const ExternalLink = styled.a`
-  opacity: ${({ disabled }) => (disabled ? ".5" : "1")};
+  display: ${({ disabled }) => (disabled ? "none" : "block")};
   color: #d4c0c0;
   font-size: 1.6rem;
   padding: 1rem 1.5rem;
