@@ -68,6 +68,15 @@ export const projects = [
     visit: "",
     id: 6,
   },
+  {
+    title: "TodoList ReactJs",
+    description: "TodoList Réaliser avec ReatJs",
+    image: "/images/todoReact.png",
+    tags: ["ReactJs", "NodeJs", "MongoDb"],
+    source: "https://github.com/Lokki68/StackverFlou-Modulo",
+    visit: "",
+    id: 6,
+  },
 ];
 
 export const TimeLineData = [
